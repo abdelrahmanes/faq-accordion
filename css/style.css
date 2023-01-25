@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+body {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6f8;
+  /* background-color: indianred; */
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 10rem 15rem;
+}
+
+/* ======================= F A Q    S E C T I O N ====================*/
+#faq {
+  font-family: "Manrope", sans-serif;
+  height: 100vh;
+}
+
+#faq-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#faq-title-name {
+  font-size: 3.5rem;
+  color: #4b4f5a;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+#faq-questions-btn {
+  text-align: center;
+  /* padding-top: 2rem; */
+}
+
+#faq-questions-btn a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #5a91c7;
+  padding: 0.9rem 2.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px #5a91c7 solid;
+  transition: all 0.3s;
+}
+#faq-questions-btn a:hover {
+  background-color: #3b74ad;
+  color: #fff;
+}
+.question-container {
+  background-color: #fff;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 0.2rem;
+  padding: 0.4rem 2rem;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.question-toggle {
+  background-color: #fff;
+  border: none;
+}
+.question-title {
+  color: #4b4f5a;
+  transition: all 0.2s;
+}
+.plus {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  transition: all 0;
+}
+.plus rect {
+  transition: all 800ms;
+  transform: scaleY(1);
+  transform-origin: 50% 50%;
+}
+
+.plus.minus .vertical-line {
+  transform: scaleY(0);
+}
+.answer {
+  margin: 0.5rem 25rem 2.5rem 4rem;
+  /* display: none; */
+}
+.answer ul {
+  list-style: none;
+  padding-left: 25px;
+}
+.answer ul li {
+  position: relative;
+}
+.answer ul li:before {
+  content: url("../imgs/pointer.svg");
+  position: absolute;
+  top: 0.2rem;
+  left: -1.5rem;
+  width: 12px;
+  height: 10px;
+  color: #4b4f5a;
+}
